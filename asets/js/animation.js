@@ -1,4 +1,3 @@
-console.log("hola")
 document.addEventListener('DOMContentLoaded', function () {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {

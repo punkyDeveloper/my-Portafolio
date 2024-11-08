@@ -18,15 +18,15 @@ fetch('./asets/json/proyecs.json')
           <div class="mt-auto flex items-end justify-between">
             <div class="flex items-center gap-2">
               <div class="h-10 w-10 shrink-0 overflow-hidden rounded-full bg-gray-100">
-                <img src="./img/fito.jpeg" loading="lazy" alt="Photo by Brock Wegner" class="h-full w-full object-cover object-center" />
+                <img src="./asets/img/foto.jpeg" loading="lazy" alt="Photo by Brock Wegner" class="h-full w-full object-cover object-center" />
               </div>
               <div>
-                <a href="${usuario.botones.ruta_git}">
+                <a target="_blank" rel="noopener noreferrer" href="${usuario.botones.ruta_git}">
                   <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Github</button>
                 </a>
               </div>
             </div>
-            <a href="${usuario.botones.ruta_ver}">
+            <a target="_blank" rel="noopener noreferrer" href="${usuario.botones.ruta_ver}">
               <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Proyecto</button>
             </a>
           </div>
