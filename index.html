@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./asets/css/output.css">
     <link rel="stylesheet" href="./asets/css/nav.css">
     <link rel="stylesheet" href="https://www.tailwindcss-animated.com/configurator.html?animation=fade-up&count=thrice">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+     <link rel="stylesheet" href="./asets/css/index.css" />
 </head>
 <body>
 
@@ -39,7 +43,9 @@
     </div>
 </nav>
 
-
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
       <section class="index text-gray-600 body-font bg-gray-800 animate-on-scroll animate-fade-up">
 
         <br>
@@ -72,7 +78,8 @@
           </div>
         </div>
       </section>
-
+    </div>
+    <div class="swiper-slide">
       <section class=" body-font animate-on-scroll">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:max-w-2xl lg:w-full  md:w-2/2 w-5/6 mb-10 md:mb-0">
@@ -93,7 +100,8 @@
         </div>
       </section>
 
-
+    </div>
+    <div class="swiper-slide">
       <section class="bg-slate-500 dark:bg-slate-500 " id="Lenguajes">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 ">
           <div class="max-w-screen-md mb-8 lg:mb-16 mx-auto text-center">
@@ -158,72 +166,62 @@
         </div>
       </section>
       
-      
- 
-  <section class="  section-form " id="Contacto">
-    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md animate-on-scroll animate-rotate-y">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contactame</h2>
-      <form action="#" class="space-y-8">
-        <div>
-          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Correo</label>
-          <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
-        </div>
-        <div>
-          <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sujeto</label>
-          <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
-        </div>
-        <div class="sm:col-span-2">
-          <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Mensaje</label>
-          <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-        </div>
-        <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-gray-50 sm:w-fit  focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-gray-500 dark:focus:ring-primary-800">Enviar</button>
-      </form>
-      <div class="video-container ">
-        
-      </div>
-      
     </div>
-
+    <div class="swiper-slide">
+      <section class="section-form" id="Contacto">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md animate-on-scroll animate-rotate-y">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contactame</h2>
+          <form action="#" class="space-y-8">
+            <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Correo</label>
+              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+            </div>
+            <div>
+              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sujeto</label>
+              <input type="text" id="subject" class="block p-1 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Mensaje</label>
+              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+            </div>
+            <button type="submit" class="py-2 px-6 text-sm font-medium text-center text-black rounded-lg bg-gray-50 sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-gray-500 dark:focus:ring-primary-800">Enviar</button>
+          </form>
+        </div>
+        <div class="video-container">
+          <spline-viewer class="video-box" url="https://prod.spline.design/IRWY6wqCA2-1AsMg/scene.splinecode"></spline-viewer>
+        </div>
+      </section>
     
-    <div class="video-container ">
-
-         <spline-viewer class="video-box" url="https://prod.spline.design/IRWY6wqCA2-1AsMg/scene.splinecode"></spline-viewer>
-
-      </div> 
-
-  </section>
-
-
-
-
-<footer class="bg-zinc-800  shadow dark:bg-zinc-800 container-footer">
-  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <div class="sm:flex sm:items-center sm:justify-between">
-          <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-
+      <footer class="bg-zinc-800 shadow dark:bg-zinc-800 container-footer">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-6">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
               <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">print(“punkydev”)</span>
-          </a>
-          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-              <li>
-                  <a href="#" class="hover:underline me-4 md:me-6">Home</a>
-              </li>
-              <li>
-                  <a href="#" class="hover:underline me-4 md:me-6">Sobre mi</a>
-              </li>
-              <li>
-                  <a href="#" class="hover:underline me-4 md:me-6">Lenguajes</a>
-              </li>
-          </ul>
-      </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a  class="hover:underline"></a>punkydev</span>
-  </div>
-</footer>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li><a href="#" class="hover:underline me-4 md:me-6">Home</a></li>
+              <li><a href="#" class="hover:underline me-4 md:me-6">Sobre mi</a></li>
+              <li><a href="#" class="hover:underline me-4 md:me-6">Lenguajes</a></li>
+            </ul>
+          </div>
+          <hr class="my-1 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-1" />
+          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a class="hover:underline"></a>punkydev</span>
+        </div>
+      </footer>
+    </div>
+    
+</div>
+<div class="swiper-pagination"></div>
+</div>
 
 <script src="./asets/js/animation.js"></script>
 <!-- <script src="./asets/js/lenguajes.js"></script> -->
 <script src="./asets/js/nav.js"></script>
 <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.63/build/spline-viewer.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- Initialize Swiper -->
+<script src="./asets/js/index.js"></script>
 </body>
 </html>
